@@ -1,0 +1,96 @@
+START!
+
+Reading file: /tmp/linux_update.ini
+Reading default db
+env: {
+    "DOWNLOADER_LAUNCHER_PATH": null,
+    "DOWNLOADER_INI_PATH": "/tmp/linux_update.ini",
+    "LOGFILE": "/media/fat/Scripts/.config/downloader/update_linux.log",
+    "CURL_SSL": "",
+    "COMMIT": "c08b81c",
+    "ALLOW_REBOOT": "0",
+    "UPDATE_LINUX": "undefined",
+    "DEFAULT_DB_URL": "https://raw.githubusercontent.com/theypsilon/LinuxDB_MiSTer/db/linuxdb.json",
+    "DEFAULT_DB_ID": "theypsilon/LinuxDB",
+    "DEFAULT_BASE_PATH": null,
+    "FORCED_BASE_PATH": null,
+    "PC_LAUNCHER": null,
+    "DEBUG": "false",
+    "FAIL_ON_FILE_ERROR": "false"
+}
+config: {
+    "databases": {
+        "theypsilon/linuxdb": {
+            "db_url": "https://raw.githubusercontent.com/theypsilon/LinuxDB_MiSTer/db/linuxdb.json",
+            "section": "theypsilon/linuxdb"
+        }
+    },
+    "config_path": "/tmp/linux_update.ini",
+    "base_path": "/media/fat",
+    "base_system_path": "/media/fat",
+    "storage_priority": "prefer_sd",
+    "allow_delete": 1,
+    "allow_reboot": 0,
+    "update_linux": true,
+    "downloader_threads_limit": 20,
+    "downloader_timeout": 300,
+    "downloader_retries": 3,
+    "zip_file_count_threshold": 60,
+    "zip_accumulated_mb_threshold": 100,
+    "filter": null,
+    "verbose": false,
+    "debug": false,
+    "default_db_id": "theypsilon/linuxdb",
+    "start_time": 1738009056.4103246,
+    "logfile": "/media/fat/Scripts/.config/downloader/update_linux.log",
+    "is_pc_launcher": false,
+    "user_defined_options": [],
+    "commit": "c08b81c",
+    "fail_on_file_error": false,
+    "minimum_system_free_space_mb": 512,
+    "minimum_external_free_space_mb": 128,
+    "curl_ssl": ""
+}
+Reading file contents "/MiSTer.version"
+Linux Version: 241008
+Loading dict from file "/media/fat/Scripts/.config/downloader/downloader.json"
+Reading file contents "/proc/mounts"
+Loading db from url: https://raw.githubusercontent.com/theypsilon/LinuxDB_MiSTer/db/linuxdb.json
+/tmp/1r0_n0br
+.+
+Loading dict from file "/tmp/1r0_n0br"
+Removing "/tmp/1r0_n0br"
+theypsilon/linuxdb still uses base_path: /media/fat
+Preparing databases ...
+Preparing db 'theypsilon/linuxdb'...
+No filter for db theypsilon/linuxdb.
+Free space: {}
+Building config map...
+Processing config 'base_path:/media/fat;downloader_threads_limit:20;downloader_timeout:300;downloader_retries:3;'...
+
+################################################################################
+SECTION: theypsilon/linuxdb
+
+Nothing new to download from given sources.
+IS_FILE quick hits: 0 slow hits: 0
+Skipping local_store saving...
+
+===========================
+Downloader 1.8 (c08) by theypsilon. Run time: 0:00:00.84s at 2025-01-27 20:17:37
+Commit: c08b81c
+Log: /media/fat/Scripts/.config/downloader/update_linux.log
+
+Installed:
+none.
+
+Errors:
+none.
+
+linux: {
+    "hash": "e17220d0c76e3d4f4c54b9383548987a",
+    "size": 93653973,
+    "url": "https://raw.githubusercontent.com/MiSTer-devel/SD-Installer-Win64_MiSTer/1027682c72ff09eb68718b94796f5d944ab9b799/release_20241008.7z",
+    "version": "241008"
+}
+Reading file contents "/MiSTer.version"
+current_linux_version "241008" matches db linux: 241008

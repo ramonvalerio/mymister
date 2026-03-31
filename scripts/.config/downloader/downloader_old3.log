@@ -1,0 +1,203 @@
+WARNING: Drop-in file /media/fat/downloader_arcade_roms_db.ini contains no sections, skipping.
+WARNING: Drop-in file /media/fat/downloader_bios_db.ini contains no sections, skipping.
+DEBUG| Config: {"curl_ssl":"","ssl_cert_file":"","http_logging":false,"databases":{"distribution_mister":{"db_url":"https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip","section":"distribution_mister"},"jtcores":{"db_url":"https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip","section":"jtcores","options":{"filter":"[mister]","_props":{"filter":"[MiSTer]"}}},"coin-opcollection/distribution-misterfpga":{"db_url":"https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip","section":"coin-opcollection/distribution-misterfpga"},"theypsilon_unofficial_distribution":{"db_url":"https://raw.githubusercontent.com/theypsilon/Distribution_Unofficial_MiSTer/main/unofficialdb.json.zip","section":"theypsilon_unofficial_distribution"},"arcade_offset_folder":{"db_url":"https://raw.githubusercontent.com/Toryalai1/Arcade_Offset/db/arcadeoffsetdb.json.zip","section":"arcade_offset_folder"},"agg23_db":{"db_url":"https://raw.githubusercontent.com/agg23/mister-repository/db/manifest.json","section":"agg23_db"},"mister_sam_files":{"db_url":"https://raw.githubusercontent.com/mrchrisster/MiSTer_SAM/db/db.json.zip","section":"mister_sam_files"},"mrext/all":{"db_url":"https://raw.githubusercontent.com/wizzomafizzo/mrext/main/releases/all.json","section":"mrext/all"},"update_all_mister":{"db_url":"https://raw.githubusercontent.com/theypsilon/Update_All_MiSTer/db/update_all_db.json","section":"update_all_mister"}},"ignored_databases":[{"file":"/media/fat/downloader_arcade_roms_db.ini","reason":"empty"},{"file":"/media/fat/downloader_bios_db.ini","reason":"empty"}],"config_path":"/media/fat/downloader.ini","base_path":"/media/fat","base_system_path":"/media/fat","storage_priority":"prefer_sd","allow_delete":1,"allow_reboot":0,"update_linux":true,"downloader_threads_limit":6,"downloader_timeout":180,"downloader_retries":3,"zip_file_count_threshold":60,"zip_accumulated_mb_threshold":100,"filter":"","verbose":false,"bench":false,"debug":false,"default_db_id":"distribution_mister","start_time":495.102379183,"logfile":null,"is_pc_launcher":false,"skip_free_space_checks":false,"user_defined_options":[],"commit":"e5b2e02","fail_on_file_error":false,"file_checking":1,"minimum_system_free_space_mb":512,"minimum_external_free_space_mb":128,"http_proxy":"","http_config":null,"rotate_logs":true,"environment":{"DOWNLOADER_LAUNCHER_PATH":null,"DOWNLOADER_INI_PATH":"/media/fat/downloader.ini","EXTRA_DROP_IN_DATABASE_FILES":"","LOGFILE":null,"LOGLEVEL":"","CURL_SSL":"","COMMIT":"e5b2e02","ALLOW_REBOOT":"0","UPDATE_LINUX":"true","DEFAULT_DB_URL":"https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip","DEFAULT_DB_ID":"distribution_mister","DEFAULT_BASE_PATH":null,"FORCED_BASE_PATH":null,"PC_LAUNCHER":null,"SKIP_FREE_SPACE_CHECKS":null,"DEBUG":"false","FAIL_ON_FILE_ERROR":"false","HTTP_PROXY":"","HTTPS_PROXY":"","ROTATE_LOGS":"true","SSL_CERT_FILE":""}}
+START!
+
+############################################################################
+SECTION: agg23_db
+
+############################################################################
+SECTION: theypsilon_unofficial_distribution
+
+############################################################################
+SECTION: arcade_offset_folder
+
+############################################################################
+SECTION: distribution_mister
+
+############################################################################
+SECTION: jtcores
+
+############################################################################
+SECTION: mrext/all
+
+############################################################################
+SECTION: mister_sam_files
+
+############################################################################
+SECTION: update_all_mister
+
+############################################################################
+SECTION: coin-opcollection/distribution-misterfpga
+
+
+_Arcade/Vulcan Venture (new).mra
+_Arcade/_alternatives/_Ghosts'n Goblins/Makaimura (Japan revision B).mra
+_Arcade/_alternatives/_Ghosts'n Goblins/Makaimura (Japan revision C).mra
+_Arcade/_alternatives/_Ghosts'n Goblins/Makaimura (Japan revision G).mra
+_Arcade/_alternatives/_Vulcan Venture/Vulcan Venture (old).mra
+Unpacking _alternatives at _Arcade/
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/jobs/open_zip_contents_worker.py", line 35, in operate_on
+    self._process_index_ctx.file_system.unzip_contents(job.transfer_job.transfer(), target_path, (job.target_folder, job.files_to_unzip, job.filtered_data['files']))  # type: ignore[union-attr]
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 458, in unzip_contents
+    raise UnzipError(f"Cannot unzip '{zip_file}' ['{target_path if isinstance(target_path, str) else len(target_path)}']") from e
+downloader.file_system.UnzipError: Cannot unzip '<_io.BytesIO object at 0xb1a090a0>' ['2']
+    CAUSE: Traceback (most recent call last):
+      File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+    FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+ERROR: Cannot unzip '<_io.BytesIO object at 0xb1a090a0>' ['2']
+DEBUG| No filter for db distribution_mister.
+Unpacking _alternatives at _Arcade/
+DEBUG| Unzipping contents from io.BytesIO.
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/jobs/open_zip_contents_worker.py", line 35, in operate_on
+    self._process_index_ctx.file_system.unzip_contents(job.transfer_job.transfer(), target_path, (job.target_folder, job.files_to_unzip, job.filtered_data['files']))  # type: ignore[union-attr]
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 458, in unzip_contents
+    raise UnzipError(f"Cannot unzip '{zip_file}' ['{target_path if isinstance(target_path, str) else len(target_path)}']") from e
+downloader.file_system.UnzipError: Cannot unzip '<_io.BytesIO object at 0xb19fb758>' ['2']
+    CAUSE: Traceback (most recent call last):
+      File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+    FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+ERROR: Cannot unzip '<_io.BytesIO object at 0xb19fb758>' ['2']
+Unpacking _alternatives at _Arcade/
+DEBUG| Unzipping contents from io.BytesIO.
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/jobs/open_zip_contents_worker.py", line 35, in operate_on
+    self._process_index_ctx.file_system.unzip_contents(job.transfer_job.transfer(), target_path, (job.target_folder, job.files_to_unzip, job.filtered_data['files']))  # type: ignore[union-attr]
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 458, in unzip_contents
+    raise UnzipError(f"Cannot unzip '{zip_file}' ['{target_path if isinstance(target_path, str) else len(target_path)}']") from e
+downloader.file_system.UnzipError: Cannot unzip '<_io.BytesIO object at 0xb556cd70>' ['2']
+    CAUSE: Traceback (most recent call last):
+      File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+    FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+ERROR: Cannot unzip '<_io.BytesIO object at 0xb556cd70>' ['2']
+Unpacking _alternatives at _Arcade/
+DEBUG| Unzipping contents from io.BytesIO.
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+DEBUG| Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/jobs/open_zip_contents_worker.py", line 35, in operate_on
+    self._process_index_ctx.file_system.unzip_contents(job.transfer_job.transfer(), target_path, (job.target_folder, job.files_to_unzip, job.filtered_data['files']))  # type: ignore[union-attr]
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 458, in unzip_contents
+    raise UnzipError(f"Cannot unzip '{zip_file}' ['{target_path if isinstance(target_path, str) else len(target_path)}']") from e
+downloader.file_system.UnzipError: Cannot unzip '<_io.BytesIO object at 0xb21c8ca8>' ['2']
+    CAUSE: Traceback (most recent call last):
+      File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 449, in unzip_contents
+    with zipf.open(member) as source, open(file_path, 'wb') as target:
+    FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra'
+
+ERROR: Cannot unzip '<_io.BytesIO object at 0xb21c8ca8>' ['2']
+.....
+DEBUG| Saving json "/media/fat/Scripts/.config/downloader/downloader.json"
+DEBUG| Saving json "/media/fat/Scripts/.config/downloader/downloader_sigs.json"
+DEBUG| Touching "/media/fat/Scripts/.config/downloader/downloader.last_successful_run"
+DEBUG| Removing "/media/fat/Scripts/.config/downloader/previous_free_space.json"
+DEBUG| unlink error: Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 482, in _unlink
+    Path(full_path).unlink()
+  File "/usr/lib/python3.9/pathlib.py", line 1344, in unlink
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/Scripts/.config/downloader/previous_free_space.json'
+
+DEBUG| LocalRepository.remove_free_spaces: Traceback (most recent call last):
+  File "/tmp/ua_downloader_latest.zip/downloader/file_system.py", line 482, in _unlink
+    Path(full_path).unlink()
+  File "/usr/lib/python3.9/pathlib.py", line 1344, in unlink
+FileNotFoundError: [Errno 2] No such file or directory: '/media/fat/Scripts/.config/downloader/previous_free_space.json'
+
+
+============================================================================
+Downloader 2.4 (e5b) by theypsilon. Run time: 00:15.18s at 2026-03-29 09:00:02
+DEBUG| Commit: e5b2e02
+Log: /media/fat/Scripts/.config/downloader/downloader.log
+
+Updates found in the following databases:
+[jtcores]
+
+Installed:
+Vulcan Venture (new).mra, _Arcade/_alternatives/_Ghosts'n Goblins/Makaimura (Japan revision B).mra, _Arcade/_alternatives/_Ghosts'n Goblins/Makaimura (Japan revision C).mra, _Arcade/_alternatives/_Ghosts'n Goblins/Makaimura (Japan revision G).mra, _Arcade/_alternatives/_Vulcan Venture/Vulcan Venture (old).mra
+
+Errors:
+_Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 1).mra, _Arcade/_alternatives/_Vindicators Part II/Vindicators Part II (rev 2).mra
+
+DEBUG| linux: {
+    "hash": "8dc3acae7d758a80a363fbd7ad31d95d",
+    "size": 93727644,
+    "url": "https://raw.githubusercontent.com/MiSTer-devel/SD-Installer-Win64_MiSTer/b8531c7848526d9a8227841923cc4a493cb6e631/release_20250402.7z",
+    "version": "250402"
+}
+DEBUG| Reading file contents "/MiSTer.version"
+Linux will be updated from distribution_mister:
+Current linux version -> 241008
+Latest linux version -> 250402
+
+Fetching the new Linux image... (this can take a while)
+
+======================================================================================
+Hold your breath: updating the Kernel, the Linux filesystem, the bootloader and stuff.
+Stopping this will make your SD unbootable!
+
+If something goes wrong, please download the SD Installer from
+https://raw.githubusercontent.com/MiSTer-devel/SD-Installer-Win64_MiSTer/b8531c7848526d9a8227841923cc4a493cb6e631/release_20250402.7z
+and copy the content of the files/linux/ directory in the linux directory of the SD.
+Reflash the bootloader with the SD Installer if needed.
+======================================================================================
+
+DEBUG| Removing run signal: /tmp/downloader_run_signal
+DEBUG| Removing "/tmp/downloader_run_signal"
+DEBUG| Touching "/tmp/MiSTer_downloader_needs_reboot"
+Linux has been updated! It is recommended to reboot your system now.
+
+DEBUG| Moving "/media/fat/Scripts/.config/downloader/downloader.log" to "/media/fat/Scripts/.config/downloader/downloader_old1.log"

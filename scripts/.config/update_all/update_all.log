@@ -1,0 +1,245 @@
+Running migration version 3.
+Running migration version 4.
+Running migration version 5.
+Running migration version 6.
+env: {
+    "CURL_SSL": "",
+    "COMMIT": "d14b285",
+    "LOCATION_STR": "MiSTer",
+    "DEBUG": "false",
+    "TRANSITION_SERVICE_ONLY": "false",
+    "SKIP_DOWNLOADER": "false",
+    "PATREON_KEY_PATH": "Scripts/update_all.patreonkey",
+    "COMMAND": "STANDARD",
+    "TIMELINE_SHORT_PATH": "Scripts/.config/update_all/timeline.json",
+    "TIMELINE_PLUS_PATH": "Scripts/.config/update_all/timeline_plus.enc",
+    "HTTP_PROXY": null,
+    "HTTPS_PROXY": null,
+    "MIRROR_ID": "",
+    "real_start_time": 25.47550539
+}
+config: {
+    "start_time": 29.53615874,
+    "boot_time": 4.060653350000003,
+    "curl_ssl": "",
+    "commit": "d14b285",
+    "skip_downloader": 0,
+    "patreon_key_path": "Scripts/update_all.patreonkey",
+    "timeline_short_path": "Scripts/.config/update_all/timeline.json",
+    "timeline_plus_path": "Scripts/.config/update_all/timeline_plus.enc",
+    "command": "STANDARD",
+    "http_proxy": "",
+    "http_config": null,
+    "retroaccount_domain": "https://retroaccount.com",
+    "base_path": "/media/fat",
+    "base_system_path": "/media/fat",
+    "paths_from_downloader_ini": false,
+    "update_linux": true,
+    "not_mister": false,
+    "verbose": false,
+    "temporary_downloader_ini": false,
+    "transition_service_only": 0,
+    "mirror": "",
+    "databases": "{'agg23_db', 'mrext/all', 'Coin-OpCollection/Distribution-MiSTerFPGA', 'MiSTer_SAM_files', 'theypsilon_unofficial_distribution', 'update_all_mister', 'jtcores', 'distribution_mister', 'arcade_offset_folder'}",
+    "arcade_organizer": false,
+    "encc_forks": "devel",
+    "download_beta_cores": true,
+    "names_region": "JP",
+    "names_char_code": "CHAR18",
+    "names_sort_code": "Common",
+    "hbmame_filter": false,
+    "rannysnice_wallpapers_filter": "ar16-9",
+    "countdown_time": 15,
+    "autoreboot": true,
+    "pocket_firmware_update": false,
+    "pocket_backup": false,
+    "log_viewer": true,
+    "use_settings_screen_theme_in_log_viewer": true,
+    "timeline_after_logs": true,
+    "overscan": "low",
+    "overscan_dim": [
+        4,
+        1
+    ],
+    "term_size": [
+        160,
+        45,
+        false,
+        false
+    ],
+    "monochrome_ui": false,
+    "update_all_mister": true,
+    "main_updater": true,
+    "jotego_updater": true,
+    "names_txt_updater": false,
+    "arcade_names_txt": false,
+    "bios_getter": false,
+    "arcade_roms_db_downloader": false,
+    "uberyoji_mister_boot_roms_mgl": false,
+    "unofficial_updater": true,
+    "llapi_updater": false,
+    "arcade_offset_downloader": true,
+    "coin_op_collection_downloader": true,
+    "agg23_db": true,
+    "MikeS11/YC_Builds-MiSTer": false,
+    "ajgowans/alt-cores": false,
+    "TheJesusFish/Dual-Ram-Console-Cores": false,
+    "tty2oled_files_downloader": false,
+    "i2c2oled_files_downloader": false,
+    "mistersam_files_downloader": true,
+    "mrext/all": true,
+    "retrospy/retrospy-MiSTer": false,
+    "Dinierto/MiSTer-GBA-Borders": false,
+    "Ranny-Snice/Ranny-Snice-Wallpapers": false,
+    "anime0t4ku_wallpapers": false,
+    "pcn_challenge_wallpapers": false
+}
+store: {
+    "migration_version": 6,
+    "theme": "Blue Installer",
+    "wait_time_for_reading": 2,
+    "countdown_time": 15,
+    "autoreboot": true,
+    "download_beta_cores": true,
+    "names_region": "JP",
+    "names_char_code": "CHAR28",
+    "names_sort_code": "Common",
+    "introduced_arcade_names_txt": true,
+    "pocket_firmware_update": false,
+    "pocket_backup": false,
+    "log_viewer": true,
+    "timeline_after_logs": true,
+    "mirror": "",
+    "use_settings_screen_theme_in_log_viewer": true,
+    "overscan": "small",
+    "monochrome_ui": false
+}
+RetroAccount: Nothing to sync.
+_SyncTransition(update_all_extras_active=False, jtbeta_access_active=None, save_device_id=None, remove_user_json=False, remove_update_all_patreon_key=True, install_update_all_patreon_key_file=None, install_jtbeta_file=None, install_jt_mra_pack=None, credentials_were_corrupted=False, credentials_were_revoked=False, connection_failed=False, need_login=True)
+
+-------------------------------------------------------------------- Update All 2.7 --------------------------------------------------------------------
+                                                           The All-in-One Updater for MiSTer                                                            
+                                                           ---------------------------------                                                            
+                                                             - Powered by Downloader 2.4 -                                                              
+
+
+                                                  ╔═════════════════════════════════════════════════╗                                                   
+                                                  ║  Become a patron to unlock exclusive features!  ║                                                   
+                                                  ║           www.patreon.com/theypsilon            ║                                                   
+                                                  ╚═════════════════════════════════════════════════╝                                                   
+
+Reading sections from /media/fat/downloader.ini
+
+Sequence:
+- Update All files
+- Main Distribution: MiSTer-devel
+- JTCORES for MiSTer (+betas)
+- theypsilon Unofficial Distribution
+- Arcade Offset folder
+- Coin-Op Collection
+- agg23's MiSTer Cores
+- MiSTer SAM files
+- MiSTer Extensions (wizzo)
+
+
+ [1m*[0mPress <[1mUP[0m>, To enter the SETTINGS.
+ [1m*[0mPress <[1mDOWN[0m>, To continue now.
+
+Sequence:
+- Update All files
+- Main Distribution: MiSTer-devel
+- JTCORES for MiSTer (+betas)
+- theypsilon Unofficial Distribution
+- Arcade Offset folder
+- Coin-Op Collection
+- agg23's MiSTer Cores
+- MiSTer SAM files
+- MiSTer Extensions (wizzo)
+
+
+
+########################################################################################################################################################
+#======================================================================================================================================================#
+########################################################################################################################################################
+
+Running MiSTer Downloader
+Using latest downloader from Scripts/.config/downloader/downloader_bin
+
+Executing launcher/tmp/ua_downloader_bin with env: {'SHELL': '/bin/sh', 'PWD': '/media/fat/Scripts', 'HOME': '/root', 'TERM': 'linux', 'USER': 'root', 'SHLVL': '2', 'memmap': '513M$511M', 'SSL_CERT_FILE': '/etc/ssl/certs/cacert.pem', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/sbin:/usr/sbin:/bin:/usr/bin', 'OLDPWD': '/', '_': '/tmp/update_all.sh', 'DOWNLOADER_INI_PATH': '/media/fat/downloader.ini', 'ALLOW_REBOOT': '0', 'CURL_SSL': '', 'COLUMNS': '152', 'LINES': '43', 'UPDATE_LINUX': 'true', 'PYTHONUNBUFFERED': '1'} quiet=False
+WARNING: Drop-in file /media/fat/downloader_arcade_roms_db.ini contains no sections, skipping.
+WARNING: Drop-in file /media/fat/downloader_bios_db.ini contains no sections, skipping.
+START!
+
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Distribution_Unofficial_MiSTer/main/unofficialdb.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/agg23/mister-repository/db/manifest.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/Toryalai1/Arcade_Offset/db/arcadeoffsetdb.json.zip: [Errno -3] Temporary failure in name resolution
+
+
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/mrchrisster/MiSTer_SAM/db/db.json.zip: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Update_All_MiSTer/db/update_all_db.json: [Errno -3] Temporary failure in name resolution
+
+ERROR: Socket Address Error! https://raw.githubusercontent.com/wizzomafizzo/mrext/main/releases/all.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Distribution_Unofficial_MiSTer/main/unofficialdb.json.zip: [Errno -3] Temporary failure in name resolution
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/agg23/mister-repository/db/manifest.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/mrchrisster/MiSTer_SAM/db/db.json.zip: [Errno -3] Temporary failure in name resolution
+
+ERROR: Socket Address Error! https://raw.githubusercontent.com/Toryalai1/Arcade_Offset/db/arcadeoffsetdb.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Update_All_MiSTer/db/update_all_db.json: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip: [Errno -3] Temporary failure in name resolution
+
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Distribution_Unofficial_MiSTer/main/unofficialdb.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/agg23/mister-repository/db/manifest.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/mrchrisster/MiSTer_SAM/db/db.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/wizzomafizzo/mrext/main/releases/all.json: [Errno -3] Temporary failure in name resolution
+
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Update_All_MiSTer/db/update_all_db.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/agg23/mister-repository/db/manifest.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip: [Errno -3] Temporary failure in name resolution
+
+ERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Distribution_Unofficial_MiSTer/main/unofficialdb.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/Toryalai1/Arcade_Offset/db/arcadeoffsetdb.json.zip: [Errno -3] Temporary failure in name resolution
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/theypsilon/Update_All_MiSTer/db/update_all_db.json: [Errno -3] Temporary failure in name resolutionERROR: Socket Address Error! https://raw.githubusercontent.com/wizzomafizzo/mrext/main/releases/all.json: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/Toryalai1/Arcade_Offset/db/arcadeoffsetdb.json.zip: [Errno -3] Temporary failure in name resolution
+ERROR: Socket Address Error! https://raw.githubusercontent.com/mrchrisster/MiSTer_SAM/db/db.json.zip: [Errno -3] Temporary failure in name resolution
+
+ERROR: Socket Address Error! https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip: [Errno -3] Temporary failure in name resolution
+*********ERROR: Socket Address Error! https://raw.githubusercontent.com/wizzomafizzo/mrext/main/releases/all.json: [Errno -3] Temporary failure in name resolution
+
+WARNING: cacert file at "/etc/ssl/certs/cacert.pem" seems to be wrong!
+         Return Code: 6
+Removing /etc/ssl/certs/cacert.pem (/etc/ssl/certs/cacert.pem)
+WARNING: cacert file at "/etc/ssl/certs/cacert.pem" seems to be wrong!
+         Return Code: 6
+Removing /etc/ssl/certs/cacert.pem (/etc/ssl/certs/cacert.pem)
+WARNING: cacert file at "/etc/ssl/certs/cacert.pem" seems to be wrong!
+         Return Code: 6
+Removing /etc/ssl/certs/cacert.pem (/etc/ssl/certs/cacert.pem)
+ERROR: Couldn't load certificates.
+
+Please, reboot your system and try again.
+
+
+
+########################################################################################################################################################
+#======================================================================================================================================================#
+########################################################################################################################################################
+
+Update All 2.7 (d14) by theypsilon. Run time: 02:24.26s at 1970-01-01 00:02:58
+Commit: d14b285
+Boot time: 4.060653350000003
+
+There were some errors in the Updaters.
+Therefore, MiSTer hasn't been fully updated.
+
+Check these logs from the Updaters that failed:
+ - Scripts/.config/downloader/downloader.log
+
+Maybe a network problem?
+Check your connection and then run this script again.
+
+Full log for more details: Scripts/.config/update_all/update_all.log
+
+Today's shoutout is for Alex Frégeau! - Join us at patreon.com/theypsilon
+Encryption: Patreon Key file 'Scripts/update_all.patreonkey' does not exist.
